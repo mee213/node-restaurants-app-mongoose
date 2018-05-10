@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: QbajdvxmPae9B6+YgeSDEKQtAO2N9YqS7g1GmDL+NpIJkiodND9yzdMFfA/mXDje7AFaPt00HMNY6rcS2Rpxdv8shTBWSAYEQn6hRwfKI8wPhm+1YA8t3/0mfxHrxdPFhJvgUT8L5ngBEHYFLPf2hfD7qk/c3i803reBAHCyPYHzqATiBxiKHg5IbR0yuOUm1259S/n50Lo8D0zuGzrpzCtKaCLbgbXbiRgpvfRL1HO+9T0rxx81M+RCDmLiGRWDcMLGO1xz5GN3i/3k9M3yy+ubT16ev6mz7M11Owx9dlqsINKF3ERv0KuWi+cQUXuZFHZQ0D/RYL/cs6DJPVSO3yn+vFZzDggXIj7O8R2NKhF+/5QnayHy8tEw7CLCl3u4zwr88/h85MYQaKAhHxU+Ubr+b7CrDS2P5y1Fm0xE+wS2u8JlmiURCNo5QPuFujK/bSMZxFC+/dP/vtmppIxnTuqVKqdXe3C73p4dMXa31uVbHMGmyBFgeilYe4gF99c70kmVDrqdidCnyJt8F7l8/a843TZIFf7QCjq/2zPn4LFfW1GcFKGQ+kCgVHrCVMQ2Y6wrmW4FAG1bj3rZPzoBem2XY3ZTL2T9FdsqNqo/zzbFtSawmhVfwNHkngLD0hg0zQWup/z3IjBG6P9r0SDnUcGMjDwd/ElTQoNDvx14CUA=
+  app: vast-dawn-87392
+  on:
+    repo: mee213/node-restaurants-app-mongoose
+    branch: feature/with-tests
